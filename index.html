@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FPS</title>
+    <link rel="stylesheet" href="style.css">
+        <script type="importmap">
+            {
+                "imports": {
+                "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/",
+                "cannon-es": "https://unpkg.com/cannon-es@0.20.0/dist/cannon-es.js",
+                "cannon-es-debugger": "https://unpkg.com/cannon-es-debugger@1.0.0/dist/cannon-es-debugger.js"
+                }
+            }
+        </script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div id="container" draggable="false">
+      <!---
+      <input type="range" id="slider1" min="0" max="1000" value="0" draggable="false">
+      <input draggable="false" type="range" id="slider2" min="0" max="1000" value="0">
+      --->
+    </div>
+
+    <label class="switch">
+      <input type="checkbox" id="mySwitch1">
+      <span class="slider round"></span>
+    </label>
+    <div id="loadingdiv">
+      <h1 id="loadingstuff">Stuff is still Loading</h1>
+    </div>
+    <div id="fpsCounter" draggable="false">FPS: 0</div>
+    <button id="resetButton" draggable="false">Reset</button>
+    
+      <script type="module" src="main.js"></script>
+  </body>
+</html>
